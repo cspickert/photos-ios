@@ -1,0 +1,309 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7E77C2CC16C03EEB00E2E8AD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E77C2CB16C03EEB00E2E8AD /* UIKit.framework */; };
+		7E77C2CE16C03EEB00E2E8AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E77C2CD16C03EEB00E2E8AD /* Foundation.framework */; };
+		7E77C2D016C03EEB00E2E8AD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E77C2CF16C03EEB00E2E8AD /* CoreGraphics.framework */; };
+		7E77C2D216C03EEB00E2E8AD /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E77C2D116C03EEB00E2E8AD /* CoreData.framework */; };
+		7E77C2D816C03EEB00E2E8AD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7E77C2D616C03EEB00E2E8AD /* InfoPlist.strings */; };
+		7E77C2DA16C03EEB00E2E8AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E77C2D916C03EEB00E2E8AD /* main.m */; };
+		7E77C2DE16C03EEB00E2E8AD /* CSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E77C2DD16C03EEB00E2E8AD /* CSAppDelegate.m */; };
+		7E77C2E016C03EEB00E2E8AD /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E77C2DF16C03EEB00E2E8AD /* Default.png */; };
+		7E77C2E216C03EEB00E2E8AD /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E77C2E116C03EEB00E2E8AD /* Default@2x.png */; };
+		7E77C2E416C03EEB00E2E8AD /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E77C2E316C03EEB00E2E8AD /* Default-568h@2x.png */; };
+		7E77C2E716C03EEB00E2E8AD /* Photos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7E77C2E516C03EEB00E2E8AD /* Photos.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7E77C2C816C03EEB00E2E8AD /* Photos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Photos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E77C2CB16C03EEB00E2E8AD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7E77C2CD16C03EEB00E2E8AD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7E77C2CF16C03EEB00E2E8AD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7E77C2D116C03EEB00E2E8AD /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		7E77C2D516C03EEB00E2E8AD /* Photos-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Photos-Info.plist"; sourceTree = "<group>"; };
+		7E77C2D716C03EEB00E2E8AD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7E77C2D916C03EEB00E2E8AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7E77C2DB16C03EEB00E2E8AD /* Photos-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Photos-Prefix.pch"; sourceTree = "<group>"; };
+		7E77C2DC16C03EEB00E2E8AD /* CSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSAppDelegate.h; sourceTree = "<group>"; };
+		7E77C2DD16C03EEB00E2E8AD /* CSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSAppDelegate.m; sourceTree = "<group>"; };
+		7E77C2DF16C03EEB00E2E8AD /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		7E77C2E116C03EEB00E2E8AD /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		7E77C2E316C03EEB00E2E8AD /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		7E77C2E616C03EEB00E2E8AD /* Photos.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Photos.xcdatamodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7E77C2C516C03EEB00E2E8AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E77C2CC16C03EEB00E2E8AD /* UIKit.framework in Frameworks */,
+				7E77C2CE16C03EEB00E2E8AD /* Foundation.framework in Frameworks */,
+				7E77C2D016C03EEB00E2E8AD /* CoreGraphics.framework in Frameworks */,
+				7E77C2D216C03EEB00E2E8AD /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7E77C2BF16C03EEB00E2E8AD = {
+			isa = PBXGroup;
+			children = (
+				7E77C2D316C03EEB00E2E8AD /* Photos */,
+				7E77C2CA16C03EEB00E2E8AD /* Frameworks */,
+				7E77C2C916C03EEB00E2E8AD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7E77C2C916C03EEB00E2E8AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7E77C2C816C03EEB00E2E8AD /* Photos.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7E77C2CA16C03EEB00E2E8AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7E77C2CB16C03EEB00E2E8AD /* UIKit.framework */,
+				7E77C2CD16C03EEB00E2E8AD /* Foundation.framework */,
+				7E77C2CF16C03EEB00E2E8AD /* CoreGraphics.framework */,
+				7E77C2D116C03EEB00E2E8AD /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7E77C2D316C03EEB00E2E8AD /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				7E77C2DC16C03EEB00E2E8AD /* CSAppDelegate.h */,
+				7E77C2DD16C03EEB00E2E8AD /* CSAppDelegate.m */,
+				7E77C2E516C03EEB00E2E8AD /* Photos.xcdatamodeld */,
+				7E77C2D416C03EEB00E2E8AD /* Supporting Files */,
+			);
+			path = Photos;
+			sourceTree = "<group>";
+		};
+		7E77C2D416C03EEB00E2E8AD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7E77C2D516C03EEB00E2E8AD /* Photos-Info.plist */,
+				7E77C2D616C03EEB00E2E8AD /* InfoPlist.strings */,
+				7E77C2D916C03EEB00E2E8AD /* main.m */,
+				7E77C2DB16C03EEB00E2E8AD /* Photos-Prefix.pch */,
+				7E77C2DF16C03EEB00E2E8AD /* Default.png */,
+				7E77C2E116C03EEB00E2E8AD /* Default@2x.png */,
+				7E77C2E316C03EEB00E2E8AD /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7E77C2C716C03EEB00E2E8AD /* Photos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E77C2EA16C03EEB00E2E8AD /* Build configuration list for PBXNativeTarget "Photos" */;
+			buildPhases = (
+				7E77C2C416C03EEB00E2E8AD /* Sources */,
+				7E77C2C516C03EEB00E2E8AD /* Frameworks */,
+				7E77C2C616C03EEB00E2E8AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Photos;
+			productName = Photos;
+			productReference = 7E77C2C816C03EEB00E2E8AD /* Photos.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7E77C2C016C03EEB00E2E8AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CS;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Cameron Spickert";
+			};
+			buildConfigurationList = 7E77C2C316C03EEB00E2E8AD /* Build configuration list for PBXProject "Photos" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7E77C2BF16C03EEB00E2E8AD;
+			productRefGroup = 7E77C2C916C03EEB00E2E8AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7E77C2C716C03EEB00E2E8AD /* Photos */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7E77C2C616C03EEB00E2E8AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E77C2D816C03EEB00E2E8AD /* InfoPlist.strings in Resources */,
+				7E77C2E016C03EEB00E2E8AD /* Default.png in Resources */,
+				7E77C2E216C03EEB00E2E8AD /* Default@2x.png in Resources */,
+				7E77C2E416C03EEB00E2E8AD /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7E77C2C416C03EEB00E2E8AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E77C2DA16C03EEB00E2E8AD /* main.m in Sources */,
+				7E77C2DE16C03EEB00E2E8AD /* CSAppDelegate.m in Sources */,
+				7E77C2E716C03EEB00E2E8AD /* Photos.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7E77C2D616C03EEB00E2E8AD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E77C2D716C03EEB00E2E8AD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7E77C2E816C03EEB00E2E8AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7E77C2E916C03EEB00E2E8AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7E77C2EB16C03EEB00E2E8AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Photos/Photos-Prefix.pch";
+				INFOPLIST_FILE = "Photos/Photos-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7E77C2EC16C03EEB00E2E8AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Photos/Photos-Prefix.pch";
+				INFOPLIST_FILE = "Photos/Photos-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7E77C2C316C03EEB00E2E8AD /* Build configuration list for PBXProject "Photos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E77C2E816C03EEB00E2E8AD /* Debug */,
+				7E77C2E916C03EEB00E2E8AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E77C2EA16C03EEB00E2E8AD /* Build configuration list for PBXNativeTarget "Photos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E77C2EB16C03EEB00E2E8AD /* Debug */,
+				7E77C2EC16C03EEB00E2E8AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7E77C2E516C03EEB00E2E8AD /* Photos.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7E77C2E616C03EEB00E2E8AD /* Photos.xcdatamodel */,
+			);
+			currentVersion = 7E77C2E616C03EEB00E2E8AD /* Photos.xcdatamodel */;
+			path = Photos.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7E77C2C016C03EEB00E2E8AD /* Project object */;
+}
