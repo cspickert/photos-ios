@@ -26,16 +26,16 @@ This project uses features only available in iOS 6+. Make sure you have the late
     
 <H3>Code</H3>
 <ul>
-<li><A HREF="https://github.com/cspickert/photos-ios">cspickert/photos-ios</A></li>
-<li><A HREF="https://github.com/AFNetworking/AFNetworking">AFNetworking/AFNetworking</A></li>
-<li><A HREF="https://github.com/nothingmagical/cheddar-ios">nothingmagical/cheddar-ios</A></li>
-<li><A HREF="https://github.com/soffes/sskeychain">soffes/sskeychain</A></li>
-<li><A HREF="https://github.com/ReactiveCocoa/ReactiveCocoa">ReactiveCocoa/ReactiveCocoa</A></li>
-<li><A HREF="https://github.com/Shopify/superdb">Shopify/superdb</A></li>
-<li><A HREF="https://github.com/square/PonyDebugger">square/PonyDebugger</A></li>
-<li><A HREF="https://github.com/gabriel/gh-unit">gabriel/gh-unit</A></li>
-<li><A HREF="https://github.com/jverkoey/nimbus">jverkoey/nimbus</A></li>
-<li><A HREF="https://github.com/facebook/three20">facebook/three20</A></li>
+<li><strong><A HREF="https://github.com/cspickert/photos-ios">Photos</A> - this project</strong></li>
+<li><A HREF="https://github.com/AFNetworking/AFNetworking">AFNetworking</A> - the most popular (and best) open source Objective-C HTTP library</li>
+<li><A HREF="https://github.com/nothingmagical/cheddar-ios">Cheddar for iOS</A> - a commercial todo app that uses AFNetworking and Core Data</li>
+<li><A HREF="https://github.com/soffes/sskeychain">SSKeychain</A> - an Objective-C wrapper for iOS and OS X keychain services</li>
+<li><A HREF="https://github.com/ReactiveCocoa/ReactiveCocoa">ReactiveCocoa</A> - functional reactive programming for Objective-C</li>
+<li><A HREF="https://github.com/Shopify/superdb">SuperDB</A> - a dynamic remote debugger for iOS apps</li>
+<li><A HREF="https://github.com/square/PonyDebugger">PonyDebugger</A> - a remote debugger for iOS apps that uses the WebKit inspector</li>
+<li><A HREF="https://github.com/gabriel/gh-unit">GHUnit</A> - additions to the standard unit testing frameworks</li>
+<li><A HREF="https://github.com/jverkoey/nimbus">Nimbus</A> - a well-maintained kitchen sink library</li>
+<li><A HREF="https://github.com/facebook/three20">Three20</A> - a poorly maintained kitchen sink library</li>
 </ul>
 	
 <H3>Blogs &amp; Newsletters</H3>
@@ -43,24 +43,24 @@ This project uses features only available in iOS 6+. Make sure you have the late
 
 <li><H3>Objective-C</H3>
 <ul>
-	<li><A HREF="http://nshipster.com/">NSHipster</A></li>
-	<li><A HREF="http://www.mikeash.com/pyblog/">NSBlog</A></li>
-	<li><A HREF="http://www.cocoawithlove.com/">Cocoa with Love</A></li>
-	<li><A HREF="http://iosdevweekly.com/">iOS Dev Weekly</A></li>
-	<li><A HREF="http://www.cimgf.com/">Cocoa Is My Girlfriend</A></li>
-	<li><A HREF="http://funwithobjc.tumblr.com/">Fun with Objective-C</A></li>
-	<li><A HREF="http://iosunittesting.com/">iOS Unit Testing</A></li>
+	<li><A HREF="http://nshipster.com/">NSHipster</A> - informative and easy-to-read articles about Objective-C and Apple frameworks</li>
+	<li><A HREF="http://www.mikeash.com/pyblog/">NSBlog</A> - weekly deep dives into the Objective-C runtime and reverse engineering Apple frameworks</li>
+	<li><A HREF="http://www.cocoawithlove.com/">Cocoa with Love</A> - inactive, but a great archive of useful articles about iOS and Mac development</li>
+	<li><A HREF="http://iosdevweekly.com/">iOS Dev Weekly</A> - well-curated weekly newsletter covering current events in iOS development</li>
+	<li><A HREF="http://www.cimgf.com/">Cocoa Is My Girlfriend</A> - well-written how-to articles on iOS and Mac development</li>
+	<li><A HREF="http://funwithobjc.tumblr.com/">Fun with Objective-C</A> - insightful articles on design patterns and frameworks by an Apple engineer</li>
+	<li><A HREF="http://iosunittesting.com/">iOS Unit Testing</A> - a blog purely dedicated to unit testing on iOS</li>
 </ul><br/></li>
 
 <li><H3>People</H3>
 <ul>
-	<li><A HREF="http://inessential.com/">inessential</A></li>
-	<li><A HREF="http://www.marco.org/">Marco.org</A></li>
-	<li><A HREF="http://daringfireball.net/">Daring Fireball</A></li>
-	<li><A HREF="http://shapeof.com/">The Shape of Everything</A></li>
-	<li><A HREF="http://kickingbear.com/blog/">kickingbear</A></li>
-	<li><A HREF="http://mjtsai.com/blog/">Michael Tsai</A></li>
-	<li><A HREF="http://prog21.dadgum.com/">Programming in the 21st Century</A></li>
+	<li><A HREF="http://inessential.com/">inessential</A> - Brent Simmons</li>
+	<li><A HREF="http://www.marco.org/">Marco.org</A> - Marco Arment</li>
+	<li><A HREF="http://daringfireball.net/">Daring Fireball</A> - John Gruber</li>
+	<li><A HREF="http://shapeof.com/">The Shape of Everything</A> - Gus Mueller</li>
+	<li><A HREF="http://kickingbear.com/blog/">kickingbear</A> - Guy English</li>
+	<li><A HREF="http://mjtsai.com/blog/">Michael Tsai</A> - Michael Tsai</li>
+	<li><A HREF="http://prog21.dadgum.com/">Programming in the 21st Century</A> - James Hague (not an iOS/Mac dev, but writes great essays)</li>
 </ul></li>
 
 </ul>
