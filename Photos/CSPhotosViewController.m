@@ -14,7 +14,7 @@
 
 static NSString *const kCSPhotoCellIdentifier = @"CSPhotoCellIdentifier";
 
-@interface CSPhotosViewController ()
+@interface CSPhotosViewController () <UICollectionViewDelegateFlowLayout>
 
 @property (nonatomic, strong) NSArray *photos;
 
@@ -25,6 +25,7 @@ static NSString *const kCSPhotoCellIdentifier = @"CSPhotoCellIdentifier";
 - (id)init
 {
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
+    [layout setItemSize:CGSizeMake(100.0, 100.0)];
     
     if ((self = [super initWithCollectionViewLayout:layout])) {
     }
@@ -79,6 +80,21 @@ static NSString *const kCSPhotoCellIdentifier = @"CSPhotoCellIdentifier";
     
     CSPhotoDetailViewController *detailController = [[CSPhotoDetailViewController alloc] initWithPhoto:photo];
     [[self navigationController] pushViewController:detailController animated:YES];
+}
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewFlowLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSDictionary *photo = [[self photos] objectAtIndex:[indexPath item]];
+    
+    CGSize maxSize = [collectionViewLayout itemSize];
+    CGSize photoSize = CGSizeMake([[photo objectForKey:@"width_z"] floatValue], [[photo objectForKey:@"height_z"] floatValue]);
+    
+    CGFloat maxPhotoSizeDim = MAX(photoSize.width, photoSize.height);
+    CGFloat minMaxSizeDim = MIN(maxSize.width, maxSize.height);
+    
+    CGFloat scaleFactor = minMaxSizeDim / maxPhotoSizeDim;
+    
+    return CGSizeMake(photoSize.width * scaleFactor, photoSize.height * scaleFactor);
 }
 
 @end

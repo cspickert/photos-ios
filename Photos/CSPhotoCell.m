@@ -14,7 +14,8 @@
 {
     if ((self = [super initWithFrame:frame])) {
         UIImageView *imageView = [[UIImageView alloc] initWithFrame:[self bounds]];
-        [imageView setContentMode:UIViewContentModeScaleAspectFill];
+        [imageView setAutoresizingMask:UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight];
+        [imageView setContentMode:UIViewContentModeScaleAspectFit];
         [self setImageView:imageView];
         [self addSubview:imageView];
     }
