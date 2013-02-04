@@ -33,6 +33,7 @@
 		7E77C31916C043B000E2E8AD /* CSPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E77C31816C043B000E2E8AD /* CSPhotoCell.m */; };
 		7E77C31C16C044F200E2E8AD /* CSPhotosAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E77C31B16C044F200E2E8AD /* CSPhotosAPIClient.m */; };
 		7E77C31F16C049E800E2E8AD /* CSPhotoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E77C31E16C049E800E2E8AD /* CSPhotoDetailViewController.m */; };
+		7E77C32216C04E7600E2E8AD /* CSPhotosAPIClientConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E77C32116C04E7600E2E8AD /* CSPhotosAPIClientConstants.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +81,8 @@
 		7E77C31B16C044F200E2E8AD /* CSPhotosAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSPhotosAPIClient.m; sourceTree = "<group>"; };
 		7E77C31D16C049E800E2E8AD /* CSPhotoDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSPhotoDetailViewController.h; sourceTree = "<group>"; };
 		7E77C31E16C049E800E2E8AD /* CSPhotoDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSPhotoDetailViewController.m; sourceTree = "<group>"; };
+		7E77C32016C04E7600E2E8AD /* CSPhotosAPIClientConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSPhotosAPIClientConstants.h; sourceTree = "<group>"; };
+		7E77C32116C04E7600E2E8AD /* CSPhotosAPIClientConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSPhotosAPIClientConstants.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +146,8 @@
 				7E77C31816C043B000E2E8AD /* CSPhotoCell.m */,
 				7E77C31A16C044F200E2E8AD /* CSPhotosAPIClient.h */,
 				7E77C31B16C044F200E2E8AD /* CSPhotosAPIClient.m */,
+				7E77C32016C04E7600E2E8AD /* CSPhotosAPIClientConstants.h */,
+				7E77C32116C04E7600E2E8AD /* CSPhotosAPIClientConstants.m */,
 				7E77C2E516C03EEB00E2E8AD /* Photos.xcdatamodeld */,
 				7E77C2D416C03EEB00E2E8AD /* Supporting Files */,
 			);
@@ -280,6 +285,7 @@
 				7E77C31916C043B000E2E8AD /* CSPhotoCell.m in Sources */,
 				7E77C31C16C044F200E2E8AD /* CSPhotosAPIClient.m in Sources */,
 				7E77C31F16C049E800E2E8AD /* CSPhotoDetailViewController.m in Sources */,
+				7E77C32216C04E7600E2E8AD /* CSPhotosAPIClientConstants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

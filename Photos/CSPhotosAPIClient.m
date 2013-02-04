@@ -7,10 +7,10 @@
 //
 
 #import "CSPhotosAPIClient.h"
+#import "CSPhotosAPIClientConstants.h"
 
 static NSString *const kCSPhotosAPIBaseURLString = @"http://api.flickr.com";
 static NSString *const kCSPhotosAPIRestPathString = @"/services/rest";
-static NSString *const kCSPhotosAPIKey = @"35c6c374b96d0560f08bb25f24b69f95";
 
 @implementation CSPhotosAPIClient
 
