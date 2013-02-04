@@ -44,6 +44,10 @@
     [super viewDidLoad];
     
     NSURL *url = [NSURL URLWithString:[[self photo] objectForKey:@"url_o"]];
+    if (url == nil) {
+        url = [NSURL URLWithString:[[self photo] objectForKey:@"url_z"]];
+    }
+    
     [[self imageView] setImageWithURL:url placeholderImage:nil];
 }
 

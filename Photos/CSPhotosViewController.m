@@ -34,6 +34,14 @@ static NSString *const kCSPhotoCellIdentifier = @"CSPhotoCellIdentifier";
 }
 
 #pragma mark -
+#pragma mark Properties
+
+- (NSArray *)photos
+{
+    return [_photos filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"url_z != NIL"]];
+}
+
+#pragma mark -
 #pragma mark View controller methods
 
 - (void)viewDidLoad
