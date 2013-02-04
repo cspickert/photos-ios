@@ -12,20 +12,13 @@
 
 - (id)initWithFrame:(CGRect)frame
 {
-    self = [super initWithFrame:frame];
-    if (self) {
-        // Initialization code
+    if ((self = [super initWithFrame:frame])) {
+        UIImageView *imageView = [[UIImageView alloc] initWithFrame:[self bounds]];
+        [imageView setContentMode:UIViewContentModeScaleAspectFill];
+        [self setImageView:imageView];
+        [self addSubview:imageView];
     }
     return self;
 }
-
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
-{
-    // Drawing code
-}
-*/
 
 @end

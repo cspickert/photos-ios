@@ -9,6 +9,7 @@
 #import "CSPhotosViewController.h"
 #import "CSPhotoCell.h"
 #import "CSPhotosAPIClient.h"
+#import "UIImageView+AFNetworking.h"
 
 static NSString *const kCSPhotoCellIdentifier = @"CSPhotoCellIdentifier";
 
@@ -61,7 +62,10 @@ static NSString *const kCSPhotoCellIdentifier = @"CSPhotoCellIdentifier";
 {
     CSPhotoCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:kCSPhotoCellIdentifier forIndexPath:indexPath];
     
-    [cell setBackgroundColor:[UIColor redColor]];
+    NSDictionary *photo = [[self photos] objectAtIndex:[indexPath item]];
+    NSURL *url = [NSURL URLWithString:[photo objectForKey:@"url_z"]];
+    
+    [[cell imageView] setImageWithURL:url placeholderImage:nil];
     
     return cell;
 }
