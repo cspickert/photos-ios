@@ -15,6 +15,18 @@ This project uses features only available in iOS 6+. Make sure you have the late
         NSString *const kCSPhotosAPIKey = @"<your API key here>";
 3. Build and run!
 
+## Ideas
+
+Here are a couple of possible fun/educational ways one could modify this project:
+
+* Add paginated results to the photo list view (by modifying CSPhotosAPIClient and CSPhotosViewController).
+* Add the ability to search Flickr for a specific tag (or tags) using [UISearchDisplayController](http://developer.apple.com/library/ios/#documentation/uikit/reference/UISearchDisplayController_Class/Reference/Reference.html).
+* Add more aggressive image caching for a better offline viewing experience.
+* Add [Core Data](http://developer.apple.com/library/ios/#documentation/cocoa/Conceptual/CoreData/cdProgrammingGuide.html) for photo metadata persistence and background API response importing for improved UI performance.
+* Display additional information about the photos, and about the users who posted them.
+* Change the layout properties of the collection view in CSPhotosViewController (by subclassing [UICollectionViewLayout](http://developer.apple.com/library/ios/#documentation/uikit/reference/UICollectionViewLayout_class/Reference/Reference.html)).
+* Use an entirely different photos API (like [Facebook](https://developers.facebook.com/docs/reference/api/photo/)).
+
 ## Links
 
 <H3>Flickr</H3>
