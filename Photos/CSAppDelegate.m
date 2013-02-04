@@ -7,6 +7,7 @@
 //
 
 #import "CSAppDelegate.h"
+#import "CSPhotosViewController.h"
 
 @implementation CSAppDelegate
 
@@ -19,6 +20,12 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    CSPhotosViewController *photosController = [[CSPhotosViewController alloc] init];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:photosController];
+    
+    [[self window] setRootViewController:navigationController];
+    
     [self.window makeKeyAndVisible];
     return YES;
 }
