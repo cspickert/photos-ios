@@ -32,6 +32,7 @@
 		7E77C31616C043A400E2E8AD /* CSPhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E77C31516C043A400E2E8AD /* CSPhotosViewController.m */; };
 		7E77C31916C043B000E2E8AD /* CSPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E77C31816C043B000E2E8AD /* CSPhotoCell.m */; };
 		7E77C31C16C044F200E2E8AD /* CSPhotosAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E77C31B16C044F200E2E8AD /* CSPhotosAPIClient.m */; };
+		7E77C31F16C049E800E2E8AD /* CSPhotoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E77C31E16C049E800E2E8AD /* CSPhotoDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +78,8 @@
 		7E77C31816C043B000E2E8AD /* CSPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSPhotoCell.m; sourceTree = "<group>"; };
 		7E77C31A16C044F200E2E8AD /* CSPhotosAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSPhotosAPIClient.h; sourceTree = "<group>"; };
 		7E77C31B16C044F200E2E8AD /* CSPhotosAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSPhotosAPIClient.m; sourceTree = "<group>"; };
+		7E77C31D16C049E800E2E8AD /* CSPhotoDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSPhotoDetailViewController.h; sourceTree = "<group>"; };
+		7E77C31E16C049E800E2E8AD /* CSPhotoDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSPhotoDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +137,8 @@
 				7E77C2DD16C03EEB00E2E8AD /* CSAppDelegate.m */,
 				7E77C31416C043A400E2E8AD /* CSPhotosViewController.h */,
 				7E77C31516C043A400E2E8AD /* CSPhotosViewController.m */,
+				7E77C31D16C049E800E2E8AD /* CSPhotoDetailViewController.h */,
+				7E77C31E16C049E800E2E8AD /* CSPhotoDetailViewController.m */,
 				7E77C31716C043B000E2E8AD /* CSPhotoCell.h */,
 				7E77C31816C043B000E2E8AD /* CSPhotoCell.m */,
 				7E77C31A16C044F200E2E8AD /* CSPhotosAPIClient.h */,
@@ -274,6 +279,7 @@
 				7E77C31616C043A400E2E8AD /* CSPhotosViewController.m in Sources */,
 				7E77C31916C043B000E2E8AD /* CSPhotoCell.m in Sources */,
 				7E77C31C16C044F200E2E8AD /* CSPhotosAPIClient.m in Sources */,
+				7E77C31F16C049E800E2E8AD /* CSPhotoDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

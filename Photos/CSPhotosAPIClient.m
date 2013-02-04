@@ -35,7 +35,7 @@ static NSString *const kCSPhotosAPIKey = @"35c6c374b96d0560f08bb25f24b69f95";
 
 - (void)fetchPhotosWithSuccess:(void (^)(id responseObject))success failure:(void (^)(NSError *))failure
 {
-    NSDictionary *parameters = @{@"api_key": kCSPhotosAPIKey, @"format" : @"json", @"nojsoncallback" : @"1", @"method" : @"flickr.photos.getRecent", @"extras" : @"url_z"};
+    NSDictionary *parameters = @{@"api_key": kCSPhotosAPIKey, @"format" : @"json", @"nojsoncallback" : @"1", @"method" : @"flickr.photos.getRecent", @"extras" : @"url_z,url_o"};
     
     [self getPath:kCSPhotosAPIRestPathString parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
         id responseJSON = [NSJSONSerialization JSONObjectWithData:responseObject options:0 error:NULL];

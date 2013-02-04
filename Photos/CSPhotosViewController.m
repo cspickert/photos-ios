@@ -10,6 +10,7 @@
 #import "CSPhotoCell.h"
 #import "CSPhotosAPIClient.h"
 #import "UIImageView+AFNetworking.h"
+#import "CSPhotoDetailViewController.h"
 
 static NSString *const kCSPhotoCellIdentifier = @"CSPhotoCellIdentifier";
 
@@ -68,6 +69,16 @@ static NSString *const kCSPhotoCellIdentifier = @"CSPhotoCellIdentifier";
     [[cell imageView] setImageWithURL:url placeholderImage:nil];
     
     return cell;
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    [collectionView deselectItemAtIndexPath:indexPath animated:YES];
+    
+    NSDictionary *photo = [[self photos] objectAtIndex:[indexPath item]];
+    
+    CSPhotoDetailViewController *detailController = [[CSPhotoDetailViewController alloc] initWithPhoto:photo];
+    [[self navigationController] pushViewController:detailController animated:YES];
 }
 
 @end
