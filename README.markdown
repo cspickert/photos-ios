@@ -48,8 +48,9 @@ Here are a couple of possible fun/educational ways one could modify this project
 <li><A HREF="https://github.com/gabriel/gh-unit">GHUnit</A> - additions to the standard unit testing frameworks</li>
 <li><A HREF="https://github.com/jverkoey/nimbus">Nimbus</A> - a well-maintained kitchen sink library</li>
 <li><A HREF="https://github.com/facebook/three20">Three20</A> - a poorly maintained kitchen sink library</li>
+<li><A HREF="https://github.com/CocoaPods/CocoaPods">CocoaPods</A> - a package manager for third party iOS libraries and frameworks</li>
 </ul>
-	
+
 <H3>Blogs &amp; Newsletters</H3>
 <ul>
 
