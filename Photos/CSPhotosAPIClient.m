@@ -33,9 +33,21 @@ static NSString *const kCSPhotosAPIRestPathString = @"/services/rest";
     return self;
 }
 
+- (NSDictionary *)parametersWithMethodName:(NSString *)methodName additionalParameters:(NSDictionary *)parameters
+{
+    NSDictionary *defaultParameters = @{@"api_key": kCSPhotosAPIKey, @"format" : @"json", @"nojsoncallback" : @"1"};
+    
+    NSMutableDictionary *allParameters = [NSMutableDictionary dictionary];
+    [allParameters setObject:methodName forKey:@"method"];
+    [allParameters addEntriesFromDictionary:defaultParameters];
+    [allParameters addEntriesFromDictionary:parameters];
+    
+    return [allParameters copy];
+}
+
 - (void)fetchPhotosWithSuccess:(void (^)(id responseObject))success failure:(void (^)(NSError *))failure
 {
-    NSDictionary *parameters = @{@"api_key": kCSPhotosAPIKey, @"format" : @"json", @"nojsoncallback" : @"1", @"method" : @"flickr.photos.getRecent", @"extras" : @"url_z,url_o"};
+    NSDictionary *parameters = [self parametersWithMethodName:@"flickr.photos.getRecent" additionalParameters:@{@"sort" : @"date-posted-desc", @"extras" : @"url_z,url_o"}];
     
     [self getPath:kCSPhotosAPIRestPathString parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
         id responseJSON = [NSJSONSerialization JSONObjectWithData:responseObject options:0 error:NULL];
