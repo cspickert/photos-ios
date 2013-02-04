@@ -28,6 +28,7 @@ static NSString *const kCSPhotoCellIdentifier = @"CSPhotoCellIdentifier";
     [layout setItemSize:CGSizeMake(100.0, 100.0)];
     
     if ((self = [super initWithCollectionViewLayout:layout])) {
+        [self setTitle:NSLocalizedString(@"Photos", @"")];
     }
     return self;
 }
@@ -44,12 +45,9 @@ static NSString *const kCSPhotoCellIdentifier = @"CSPhotoCellIdentifier";
     
     [[self collectionView] registerClass:[CSPhotoCell class] forCellWithReuseIdentifier:kCSPhotoCellIdentifier];
     
-    [[CSPhotosAPIClient sharedClient] fetchPhotosWithSuccess:^(id responseObject) {
-        [self setPhotos:[[responseObject objectForKey:@"photos"] objectForKey:@"photo"]];
-        [[self collectionView] reloadData];
-    } failure:^(NSError *error) {
-        [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Error", @"") message:[error localizedDescription] delegate:nil cancelButtonTitle:NSLocalizedString(@"Okay", @"") otherButtonTitles:nil] show];
-    }];
+    [[self navigationItem] setRightBarButtonItem:[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(refreshButtonPressed:)]];
+    
+    [self fetchPhotos];
 }
 
 #pragma mark -
@@ -87,7 +85,11 @@ static NSString *const kCSPhotoCellIdentifier = @"CSPhotoCellIdentifier";
     NSDictionary *photo = [[self photos] objectAtIndex:[indexPath item]];
     
     CGSize maxSize = [collectionViewLayout itemSize];
+
     CGSize photoSize = CGSizeMake([[photo objectForKey:@"width_z"] floatValue], [[photo objectForKey:@"height_z"] floatValue]);
+    if (CGSizeEqualToSize(photoSize, CGSizeZero)) {
+        photoSize = maxSize;
+    }
     
     CGFloat maxPhotoSizeDim = MAX(photoSize.width, photoSize.height);
     CGFloat minMaxSizeDim = MIN(maxSize.width, maxSize.height);
@@ -95,6 +97,27 @@ static NSString *const kCSPhotoCellIdentifier = @"CSPhotoCellIdentifier";
     CGFloat scaleFactor = minMaxSizeDim / maxPhotoSizeDim;
     
     return CGSizeMake(photoSize.width * scaleFactor, photoSize.height * scaleFactor);
+}
+
+#pragma mark -
+#pragma mark Interface actions
+
+- (void)refreshButtonPressed:(id)sender
+{
+    [self fetchPhotos];
+}
+
+#pragma mark -
+#pragma mark Helpers
+
+- (void)fetchPhotos
+{
+    [[CSPhotosAPIClient sharedClient] fetchPhotosWithSuccess:^(id responseObject) {
+        [self setPhotos:[[responseObject objectForKey:@"photos"] objectForKey:@"photo"]];
+        [[self collectionView] reloadData];
+    } failure:^(NSError *error) {
+        [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Error", @"") message:[error localizedDescription] delegate:nil cancelButtonTitle:NSLocalizedString(@"Okay", @"") otherButtonTitles:nil] show];
+    }];
 }
 
 @end
