@@ -8,10 +8,13 @@
 
 #import "CSPhotosViewController.h"
 #import "CSPhotoCell.h"
+#import "CSPhotosAPIClient.h"
 
 static NSString *const kCSPhotoCellIdentifier = @"CSPhotoCellIdentifier";
 
 @interface CSPhotosViewController ()
+
+@property (nonatomic, strong) NSArray *photos;
 
 @end
 
@@ -37,6 +40,13 @@ static NSString *const kCSPhotoCellIdentifier = @"CSPhotoCellIdentifier";
     [[self collectionView] setBackgroundColor:[UIColor whiteColor]];
     
     [[self collectionView] registerClass:[CSPhotoCell class] forCellWithReuseIdentifier:kCSPhotoCellIdentifier];
+    
+    [[CSPhotosAPIClient sharedClient] fetchPhotosWithSuccess:^(id responseObject) {
+        [self setPhotos:[[responseObject objectForKey:@"photos"] objectForKey:@"photo"]];
+        [[self collectionView] reloadData];
+    } failure:^(NSError *error) {
+        [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Error", @"") message:[error localizedDescription] delegate:nil cancelButtonTitle:NSLocalizedString(@"Okay", @"") otherButtonTitles:nil] show];
+    }];
 }
 
 #pragma mark -
@@ -44,7 +54,7 @@ static NSString *const kCSPhotoCellIdentifier = @"CSPhotoCellIdentifier";
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return 100;
+    return [[self photos] count];
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
